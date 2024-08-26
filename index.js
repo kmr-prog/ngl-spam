@@ -1,2 +1,2 @@
 let ddosin = require("./lol.js")
-ddosin(`https://controlled.yupradev.biz.id/auth/login`)
+ddosin(`https://controlled.yupradev.biz.id/`)
