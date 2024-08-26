@@ -1,2 +1,2 @@
 let ddosin = require("./lol.js")
-ddosin(`https://nodec.mediathektv.com`)
+ddosin(`https://beebot.hbii.my.id/`)
