@@ -1,2 +1,2 @@
 let ddosin = require("./lol.js")
-ddosin(`https://imind.rndlab.ru`)
+ddosin(`https://www.unila.ac.id/`)
