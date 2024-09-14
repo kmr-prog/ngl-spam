@@ -1,2 +1,2 @@
 let ddosin = require("./lol.js")
-ddosin(`riz73060`, `besok senin`)
+ddosin(`fallxd_7811`, `bang aku mau sc gratis`)
